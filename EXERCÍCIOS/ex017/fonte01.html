@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head1>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fontes em CSS</title>
+    <!--Safe combination-->
+    <style>
+        @import url();
+
+
+        body{
+            font-family: 'Work sans',Arial, Helvetica, sans-serif; 
+            /*Medidas absolutas
+            cm, mm,in,*px,pt,pc
+
+            Medidas Relativas
+            *em,ex,rem,vw,vh, %
+
+            */
+            font-size: 1.2em; /*Padrao*/
+        }
+        h1{
+           /*shorrthand font
+
+           font-style --> font-weight --> font-size --> font-family
+           
+            font-family: 'Worrk sans', sans-serif;
+            font-weight: bolder;
+            font-size: 3em;
+            font-family: italic; 
+           */
+
+           font: italic bolder 3 em 'Work sans', sans-serif;
+        }
+    </style>
+</head>
+<body>
+    <h1>Trabalhando com fontes</h1>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Quo placeat voluptas nihil sed laboriosam alias esse, itaque ratione velit dolore unde praesentium, rerum earum, eligendi odit magni atque culpa. Impedit?</p>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Temporibus vel, reprehenderit ducimus possimus nihil natus soluta ut officia odit velit delectus deserunt molestiae deleniti unde repellat quae quod amet at.</p>
+    <h2>Subtítulo</h2>
+    <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Ducimus voluptates temporibus necessitatibus cumque, doloremque corporis voluptatibus iure minima dolore, veniam atque optio delectus? Soluta et illum amet accusantium, atque illo?</p>
+</body>
+</html>
