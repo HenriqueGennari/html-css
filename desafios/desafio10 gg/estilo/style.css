@@ -81,13 +81,13 @@ nav > a:hover{
 }
 
 main{
-
+    
     min-width: 300px;
     max-width: 1000px;
     margin: auto;
     margin-bottom: 30px;
     padding: 20px;
-    background-color: white;
+    background-color: rgb(255, 255, 255);
     box-shadow: 0px 0px 10px rgb(70, 69, 69);
     border-radius: 0px 0px 10px 10px;
 }
