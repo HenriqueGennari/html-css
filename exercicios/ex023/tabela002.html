@@ -14,11 +14,15 @@
         }
         td , th{
             border: 1px solid black;
-            padding: 10px;
         }
         thead, tfoot{
             background-color: gray;
             color: white;
+        }
+        caption{
+            font-size: 1.5rem;
+            padding: 5px;
+            background-color: lightgrey;
         }
         .num{
             text-align: right;
@@ -30,6 +34,7 @@
     <!--
         ANATOMIA DA TABELA GRANDE
         TABLE
+            CAPTION -- LEGENDA
             THEAD
                 TR,TD,TH
             TBODY
@@ -38,50 +43,55 @@
                 TR,TD,TH
     -->
     <table>
+        <caption>Populações das unidades federativas.</caption>
         <thead>
             <tr>
-                <th>Estado</th>
-                <th>Populção</th>
+                <th scope="col">Estado</th>
+                <th scope="col">Populção</th>
             </tr>
         </thead>
         <tbody>
             <tr>
+                <td>DF</td>
+                <td class="num" id="tres">500 000 000</td>
+            </tr>
+            <tr>
                 <td>SP</td>
-                <td class="num">45 919 049  </td>
+                <td class="num" id="dois">45 919 049  </td>
             </tr>
             <tr>
                 <td>MG</td>
-                <td class="num">21 168 791</td>
+                <td class="num" id="dois">21 168 791</td>
             </tr>
             <tr>
                 <td>RJ</td>
-                <td class="num">17 264 943</td>
+                <td class="num" id="dois">17 264 943</td>
             </tr>
             <tr>
                 <td>BA</td>
-                <td class="num">14 873 456</td>
+                <td class="num" id="dois">14 873 456</td>
             </tr>
             <tr>
                 <td>PR</td>
-                <td class="num">11 244 754</td>
+                <td class="num" id="dois">11 244 754</td>
             </tr>
             <tr>
                 <td>PB</td>
-                <td class="num">9 554 832</td>
+                <td class="num" id="um">9 554 832</td>
             </tr>
             <tr>
                 <td>CA</td>
-                <td class="num">9 132 423</td>
+                <td class="num" id="um">9 132 423</td>
             </tr>
-            <tr>
+            <tr id="um">
                 <td>PA</td>
-                <td class="num">8 602 566</td>
+                <td class="num" id="um">8 602 566</td>
             </tr>
         </tbody>
         <tfoot>
             <tr>
-                <th>Total de Habitantes</th>
-                <td><strong>210 776 908</strong></td>
+                <th scope="row">Total de Habitantes</th>
+                <td style="text-align: center;"><strong>210 776 908</strong></td>
             </tr>
         </tfoot>
     </table>
